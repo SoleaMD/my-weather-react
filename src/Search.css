@@ -1,0 +1,25 @@
+.Search .form-control {
+  display: inline;
+  width: 270px;
+  background-color: #fcfcfc;
+  border-color: black;
+}
+
+.Search .btn-design {
+  background-color: #eeeeee;
+  border-color: black;
+  position: relative;
+  top: -2px;
+}
+
+.Search .coordinates-image {
+  width: 50px;
+  margin-top: -5px;
+  height: auto;
+}
+
+.Search .coordinates-image:hover {
+  cursor: pointer;
+  background-color: #8cc7f4;
+  border-radius: 4px;
+}
