@@ -1,0 +1,8 @@
+.Data .humidity,
+.wind,
+.degrees-outside,
+.max-temperature,
+.min-temperature {
+  font-size: 20px;
+  font-style: italic;
+}
