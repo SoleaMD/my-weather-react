@@ -1,0 +1,27 @@
+.Theme .theme-title {
+  margin-top: 20px;
+  text-align: center;
+  color: #293a80;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.Theme .light {
+  color: #4700d8;
+  border-color: #4700d8;
+}
+
+.Theme .light:hover {
+  color: white;
+  background-color: #4700d8;
+}
+
+.Theme .light-button {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.Theme .dark-button {
+  margin-top: 10px;
+  text-align: left;
+}

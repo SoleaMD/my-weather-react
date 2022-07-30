@@ -3,6 +3,8 @@ import Search from "./Search";
 import Time from "./Time";
 import Weather from "./Weather";
 import Data from "./Data";
+import Theme from "./Theme";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -22,7 +24,9 @@ export default function App() {
           <div className="col-4 other-data">
             <Data />
           </div>
+          <Theme />
         </div>
+        <Footer />
       </div>
     </div>
   );

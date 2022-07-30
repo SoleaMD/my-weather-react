@@ -1,0 +1,11 @@
+.Footer .credits {
+  font-size: 11px;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+  margin-top: 20px;
+  color: #293a80;
+}
+
+.Footer a {
+  text-decoration: none;
+}
