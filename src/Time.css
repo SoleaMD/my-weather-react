@@ -1,0 +1,18 @@
+.Time .time-title {
+  font-family: "Patrick Hand", cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #293a80;
+}
+.Time .clock {
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  color: #293a80;
+  font-size: 35px;
+}
+
+.Time .note {
+  text-align: center;
+  color: #293a80;
+  font-family: "Patrick Hand", cursive;
+}

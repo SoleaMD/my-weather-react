@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "./Search";
+import Time from "./Time";
 
 import "./App.css";
 
@@ -8,6 +9,14 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Search />
+        <div className="row justify-content-evenly">
+          <div className="col-4 time">
+            <br />
+            <Time />
+          </div>
+          <div className="col-4"></div>
+          <div className="col-4 other-data"></div>
+        </div>
       </div>
     </div>
   );
