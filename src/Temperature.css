@@ -1,0 +1,20 @@
+.Temperature .weather-description {
+  text-transform: capitalize;
+}
+
+.Temperature .degrees {
+  padding: 10px 10px;
+}
+
+.Temperature .current-weather-emoji {
+  width: 50px;
+  margin-top: -5px;
+  height: auto;
+  padding: 5px 5px;
+}
+
+.Temperature .current-weather-emoji:hover {
+  cursor: pointer;
+  background-color: #8cc7f4;
+  border-radius: 4px;
+}

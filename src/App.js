@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "./Search";
 import Time from "./Time";
+import Weather from "./Weather";
 
 import "./App.css";
 
@@ -14,7 +15,9 @@ export default function App() {
             <br />
             <Time />
           </div>
-          <div className="col-4"></div>
+          <div className="col-4">
+            <Weather />
+          </div>
           <div className="col-4 other-data"></div>
         </div>
       </div>
