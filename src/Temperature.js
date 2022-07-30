@@ -6,7 +6,7 @@ export default function Temperature() {
     temperature: 19,
     description: "few clouds",
     iconUrl:
-      "https://w7.pngwing.com/pngs/939/837/png-transparent-rain-weather-forecasting-overcast-cloud-cloudy-love-cloud-heart-thumbnail.png",
+      "http://openweathermap.org/img/wn/02d@2x.png",
   };
   return (
     <div className="Temperature">
