@@ -1,31 +1,23 @@
 import React from "react";
 import "./Data.css";
 
-export default function Data() {
-  let additionalData = {
-    humidity: 80,
-    wind: 4,
-    degreesCurrent: 17,
-    degreesHigh: 24,
-    degreesLow: 15,
-  };
+export default function Data(props) {
   return (
     <div className="Data">
       <h6 className="humidity">
-        Humidity: {additionalData.humidity}%
+        Humidity: {props.humidity}%
       </h6>
       <h6 className="wind">
-        Wind: {additionalData.wind}km/h
+        Wind: {props.wind}km/h
       </h6>
       <h6 className="degrees-outside">
-        Feels like:{" "}
-        {additionalData.degreesCurrent}º
+        Feels like: {props.degreesCurrent}º
       </h6>
       <h6 className="max-temperature">
-        Highest: {additionalData.degreesHigh}º
+        Highest: {props.degreesHigh}º
       </h6>
       <h6 className="min-temperature">
-        Lowest: {additionalData.degreesLow}º
+        Lowest: {props.degreesLow}º
       </h6>
     </div>
   );
