@@ -26,6 +26,7 @@ export default function Search() {
       feels: response.data.main.feels_like,
       max: response.data.main.temp_max,
       min: response.data.main.temp_min,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -86,7 +87,7 @@ export default function Search() {
         <div className="row justify-content-evenly">
           <div className="col-4 time">
             <br />
-            <Time />
+            <Time date={weather.date} />
           </div>
           <div className="col-4">
             <Weather
@@ -96,6 +97,7 @@ export default function Search() {
               )}
               description={weather.description}
               icon={weather.icon}
+              date={weather.date}
             />
           </div>
           <div className="col-4 other-data">

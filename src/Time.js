@@ -1,18 +1,23 @@
 import React from "react";
 import "./Time.css";
 
-export default function Time() {
-  let time = {
-    hour: 12,
-    minutes: 30,
-  };
+export default function Time(props) {
+  let hours = props.date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = props.date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
   return (
     <div className="Time">
       <br />
       <h5 className="time-title">Time</h5>
       <h2 className="clock">
-        <span id="hour">{time.hour}</span>:
-        <span id="minutes">{time.minutes}</span>
+        <span id="hour">{hours}</span>:
+        <span id="minutes">{minutes}</span>
       </h2>
       <br />
       <div className="note">
