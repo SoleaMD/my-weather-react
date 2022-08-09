@@ -7,8 +7,10 @@ import Data from "./Data";
 import "./Search.css";
 import { ReactComponent as Location } from "./img/my_location_dark.svg";
 
-export default function Search() {
-  const [city, setCity] = useState("");
+export default function Search(props) {
+  const [city, setCity] = useState(
+    props.defaultCity
+  );
   const [result, setResult] = useState(false);
   const [weather, setWeather] = useState("");
   const [statement, setStatement] = useState("");
@@ -30,12 +32,16 @@ export default function Search() {
     });
   }
 
-  function goSearch(event) {
-    event.preventDefault();
+  function search() {
     let apiKey =
       "31494f01ec42e369b1839339e1ef40bd";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
+  }
+
+  function goSearch(event) {
+    event.preventDefault();
+    search();
 
     if (city.length <= 0) {
       setStatement(
@@ -117,6 +123,7 @@ export default function Search() {
       </div>
     );
   } else {
+    search(props.defaultCity);
     return (
       <div className="SearchEngine">
         {form}
