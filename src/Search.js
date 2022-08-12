@@ -13,7 +13,6 @@ export default function Search(props) {
   );
   const [result, setResult] = useState(false);
   const [weather, setWeather] = useState("");
-  const [statement, setStatement] = useState("");
 
   function displayTemperature(response) {
     setResult(true);
@@ -42,16 +41,6 @@ export default function Search(props) {
   function goSearch(event) {
     event.preventDefault();
     search();
-
-    if (city.length <= 0) {
-      setStatement(
-        <p>
-          Invalid city search, please try again
-        </p>
-      );
-    } else {
-      setStatement("");
-    }
   }
   function updateSearch(event) {
     setCity(event.target.value);
@@ -89,7 +78,6 @@ export default function Search(props) {
     return (
       <div className="SearchEngine">
         {form}
-        {statement}
         <div className="row justify-content-evenly">
           <div className="col-4 time">
             <br />
@@ -125,10 +113,7 @@ export default function Search(props) {
   } else {
     search(props.defaultCity);
     return (
-      <div className="SearchEngine">
-        {form}
-        {statement}
-      </div>
+      <div className="SearchEngine">{form}</div>
     );
   }
 }
