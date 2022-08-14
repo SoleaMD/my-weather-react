@@ -3,6 +3,7 @@ import axios from "axios";
 import Weather from "./Weather";
 import Time from "./Time";
 import Data from "./Data";
+import Forecast from "./Forecast";
 
 import "./Search.css";
 import { ReactComponent as Location } from "./img/my_location_dark.svg";
@@ -106,6 +107,9 @@ export default function Search(props) {
               )}
               degreesLow={Math.round(weather.min)}
             />
+          </div>
+          <div className="Forecast">
+            <Forecast />
           </div>
         </div>
       </div>
