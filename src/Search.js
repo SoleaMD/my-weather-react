@@ -29,6 +29,7 @@ export default function Search(props) {
       max: response.data.main.temp_max,
       min: response.data.main.temp_min,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
     });
   }
 
@@ -109,7 +110,9 @@ export default function Search(props) {
             />
           </div>
           <div className="Forecast">
-            <Forecast />
+            <Forecast
+              coordinates={weather.coordinates}
+            />
           </div>
         </div>
       </div>
