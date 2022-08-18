@@ -3,7 +3,7 @@ import "./Forecast.css";
 import axios from "axios";
 import ForecastDay from "./ForecastDay";
 
-export default function Forecast(props) {
+export default function Forecast2(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState("");
 
@@ -14,15 +14,15 @@ export default function Forecast(props) {
 
   if (loaded) {
     return (
-      <div className="Forecast">
+      <div className="Forecast2">
         <div className="row">
           {forecast.map(function (
             dailyForecast,
             index
           ) {
-            if (index < 4 && index > 0) {
+            if (index < 6 && index > 3) {
               return (
-                <div className="col-4 forecast-day">
+                <div className="col-6 forecast-day">
                   <div className="card-days mx-auto">
                     <div
                       className="card-body"
