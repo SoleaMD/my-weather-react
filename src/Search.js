@@ -4,7 +4,7 @@ import Weather from "./Weather";
 import Time from "./Time";
 import Data from "./Data";
 import Forecast from "./Forecast";
-import Forecast2 from "./Forecast2";
+import Forecast2 from "./ForecastSecond";
 
 import "./Search.css";
 import { ReactComponent as Location } from "./img/my_location_dark.svg";
@@ -114,7 +114,7 @@ export default function Search(props) {
             <Forecast
               coordinates={weather.coordinates}
             />
-            <Forecast2
+            <ForecastSecond
               coordinates={weather.coordinates}
             />
           </div>

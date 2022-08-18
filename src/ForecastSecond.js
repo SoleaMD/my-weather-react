@@ -3,7 +3,7 @@ import "./Forecast.css";
 import axios from "axios";
 import ForecastDay from "./ForecastDay";
 
-export default function Forecast2(props) {
+export default function ForecastSecond(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState("");
 
