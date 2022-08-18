@@ -4,7 +4,7 @@ import Weather from "./Weather";
 import Time from "./Time";
 import Data from "./Data";
 import Forecast from "./Forecast";
-import Forecast2 from "./ForecastSecond";
+import ForecastSecond from "./ForecastSecond";
 
 import "./Search.css";
 import { ReactComponent as Location } from "./img/my_location_dark.svg";
