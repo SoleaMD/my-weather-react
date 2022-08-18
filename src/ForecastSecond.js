@@ -14,7 +14,7 @@ export default function ForecastSecond(props) {
 
   if (loaded) {
     return (
-      <div className="Forecast2">
+      <div className="ForecastSecond">
         <div className="row">
           {forecast.map(function (
             dailyForecast,
@@ -35,6 +35,8 @@ export default function ForecastSecond(props) {
                   </div>
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
