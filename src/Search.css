@@ -1,15 +1,16 @@
 .Search .form-control {
   display: inline;
   width: 270px;
-  background-color: #fcfcfc;
-  border-color: black;
+  background-color: var(--form-background);
+  border-color: var(--border);
 }
 
 .Search .btn-design {
-  background-color: #eeeeee;
-  border-color: black;
+  background-color: var(--search-button-color);
+  border-color: var(--border);
   position: relative;
   top: -2px;
+  color: var(--text-color);
 }
 
 .Search .coordinates-image {
@@ -20,6 +21,6 @@
 
 .Search .coordinates-image:hover {
   cursor: pointer;
-  background-color: #8cc7f4;
+  background-color: var(--main-color);
   border-radius: 4px;
 }

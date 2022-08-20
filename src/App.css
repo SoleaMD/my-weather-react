@@ -1,8 +1,37 @@
-body {
-  background-color: #d7e9f7;
+.App {
+  background-color: var(--background);
   font-family: "Patrick Hand", cursive;
 }
+
 .App .other-data {
   text-align: center;
-  color: #293a80;
+  color: var(--additional-text-color);
+}
+
+.theme-title {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--additional-text-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.App .light {
+  color: var(--button-theme-color);
+  border-color: var(--button-theme-color);
+}
+
+.App .light:hover {
+  color: white;
+  background-color: var(--button-theme-color);
+}
+
+.App .light-button {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.App .dark-button {
+  margin-top: 10px;
+  text-align: left;
 }

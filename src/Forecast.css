@@ -5,32 +5,33 @@
 
 .Forecast img:hover {
   cursor: pointer;
-  background-color: #8cc7f4;
+  background-color: var(--main-color);
   border-radius: 4px;
 }
 
 .Forecast .card {
   width: 200px;
-  border: 5px solid #8cc7f4;
-  box-shadow: 8px 8px #8cc7f4;
+  border: 5px solid var(--main-color);
+  box-shadow: 8px 8px var(--main-color);
+  background-color: var(--other-background);
 }
 
 .Forecast .card-body {
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--other-background);
   padding: 15px 7px;
 }
 
 .Forecast .card-days {
   width: 135px;
-  border: 3px solid #8cc7f4;
-  box-shadow: 5px 5px #8cc7f4;
+  border: 3px solid var(--main-color);
+  box-shadow: 5px 5px var(--main-color);
   margin-top: 50px;
   margin-left: 20px;
 }
 
 .Forecast .card-subtitle {
-  color: #6c757d !important;
+  color: var(--subtitle-color);
   font-weight: bold;
 }
 
@@ -40,4 +41,5 @@
 
 .Forecast .degrees {
   padding: 10px 10px;
+  color: var(--text-color);
 }

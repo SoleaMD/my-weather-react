@@ -3,7 +3,7 @@
   font-family: "Share Tech Mono", monospace;
   text-align: center;
   margin-top: 20px;
-  color: #293a80;
+  color: var(--text-color);
 }
 
 .Footer a {

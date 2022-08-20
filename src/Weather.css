@@ -1,17 +1,22 @@
 .Weather .card-subtitle {
-  color: #6c757d !important;
+  color: var(--subtitle-color);
   font-weight: bold;
 }
 
 .Weather .card {
   width: 200px;
-  border: 5px solid #8cc7f4;
-  box-shadow: 8px 8px #8cc7f4;
+  border: 5px solid var(--main-color);
+  box-shadow: 8px 8px var(--main-color);
+  background-color: var(--other-background);
 }
 
 .Weather .card-body {
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--other-background);
+}
+
+.Weather .card-title {
+  color: var(--text-color);
 }
 
 .Weather .weather-description {
@@ -20,6 +25,7 @@
 
 .Weather .degrees {
   padding: 10px 10px;
+  color: var(--text-color);
 }
 
 .Weather .current-weather-emoji {
@@ -30,6 +36,6 @@
 
 .Weather .current-weather-emoji:hover {
   cursor: pointer;
-  background-color: #8cc7f4;
+  background-color: var(--main-color);
   border-radius: 4px;
 }
