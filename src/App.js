@@ -19,7 +19,7 @@ export default function App() {
     <div className="App" data-theme={theme}>
       <div className="container">
         <Search defaultCity="Madrid" />
-        <div className="Theme" data-theme={theme}>
+        <div className="Theme">
           <div className="theme-title">Theme</div>
           <div className="row">
             <div className="col-6 light-button">

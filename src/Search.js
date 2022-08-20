@@ -57,7 +57,6 @@ export default function Search(props) {
             type="search"
             className="form-control"
             placeholder="Enter a city"
-            id="city-selected"
             autoComplete="off"
             onChange={updateSearch}
           />
@@ -65,7 +64,6 @@ export default function Search(props) {
             type="submit"
             className="btn btn-design"
             value="Search"
-            id="search-button"
           />
           <span>
             <Location

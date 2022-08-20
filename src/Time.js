@@ -16,8 +16,8 @@ export default function Time(props) {
       <br />
       <h5 className="time-title">Time</h5>
       <h2 className="clock">
-        <span id="hour">{hours}</span>:
-        <span id="minutes">{minutes}</span>
+        <span>{hours}</span>:
+        <span>{minutes}</span>
       </h2>
       <br />
       <div className="note">

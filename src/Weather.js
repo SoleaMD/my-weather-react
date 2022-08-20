@@ -17,13 +17,10 @@ export default function Weather(props) {
     <div className="Weather">
       <div className="card mx-auto">
         <div className="card-body">
-          <h1 className="card-title" id="city">
+          <h1 className="card-title">
             {props.city}
           </h1>
-          <h6
-            className="card-subtitle mb-2"
-            id="current-day"
-          >
+          <h6 className="card-subtitle mb-2">
             {day}
           </h6>
         </div>
@@ -31,12 +28,9 @@ export default function Weather(props) {
           <img
             src={props.icon}
             className="current-weather-emoji"
-            alt=""
+            alt={props.description}
           />
-          <span
-            className="degrees"
-            id="zero-day-degrees"
-          >
+          <span className="degrees">
             {props.temperature}º
           </span>
         </h1>
