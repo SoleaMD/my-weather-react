@@ -41,6 +41,22 @@ export default function Search(props) {
     axios.get(apiUrl).then(displayTemperature);
   }
 
+  function getCoordinates() {
+    navigator.geolocation.getCurrentPosition(
+      revealPosition
+    );
+  }
+
+  function revealPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let newApiKey =
+      "31494f01ec42e369b1839339e1ef40bd";
+    let newApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${newApiKey}&units=metric`;
+
+    axios.get(newApiUrl).then(displayTemperature);
+  }
+
   function goSearch(event) {
     event.preventDefault();
     search();
@@ -50,7 +66,7 @@ export default function Search(props) {
   }
   let form = (
     <div className="Search">
-      <form id="city-form" onSubmit={goSearch}>
+      <form onSubmit={goSearch}>
         <br />
         <div className="mb-3">
           <input
@@ -69,6 +85,7 @@ export default function Search(props) {
             <Location
               className="coordinates-image"
               alt="current location using a phone"
+              onClick={getCoordinates}
             />
           </span>
         </div>
